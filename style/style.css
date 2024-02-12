@@ -1,0 +1,172 @@
+body {
+	background: #232427 url(../files/background-2.jpg) bottom center no-repeat fixed;
+	color: #eee;
+	font: 14px/1.5 "Verdana", "Arial", sans-serif;
+}
+header, h1, main > h2, main > h3, footer {
+	text-align: center;
+}
+main {
+	background-color: rgba(16, 16, 20, 0.85);
+	margin: 2%;
+	border: 3px solid #444;
+	border-radius: 3%;
+	padding: 2% 3%;
+}
+h1 {
+	font-size: 2em;	
+}
+h3 {
+	font-size: 1.4em;
+}
+header {
+	margin-bottom: 20px;
+}
+.header_hr, .footer_hr {
+	width: 90%;
+	border-radius: 50%;
+}
+footer#index {
+	margin-top: 2%;
+}
+a {
+	font-weight: bold;
+	text-decoration-line: none;
+}
+a#index_link, a#index_link:visited, a#index_link:hover {
+	color: #eee;
+}
+nav > a, a.back_link {
+	transition: .3s;
+	color: #c1c1c1;
+	padding: 4px 8px 4px 8px;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 10%;
+}
+nav > a:visited, a.back_link:visited {
+	color: #bbb;
+}
+p > a:visited, li > a:visited {
+	color: #888;
+}
+nav > a:hover, a.back_link:hover{
+	background-color: white;
+	color: black;
+}
+p > a, li > a {
+	transition: .1s;
+	color: #777;
+}
+p > a:hover, li > a:hover {
+	color: #fff;
+}
+ul > li {
+	margin: 8px 0;
+}
+q {
+	font-style: italic;
+}
+main > section {
+	margin: 0px 15px 0px 15px;
+}
+main > p, main > section > p {
+	text-indent: 1.25em;
+}
+main > section, main > p {
+	padding-left: 6px;
+}
+section > h2 {
+	margin: 0;
+	margin-top: 40px;
+}
+h2#char_name {
+	font-size: 1.8em;
+	letter-spacing: .25em;
+}
+section > hr {
+	margin-bottom: 20px;
+	border-color: #222;
+}
+section.bio > figure {
+	float: right;
+	width: 30%;
+ 	background-color: #141414;
+ 	border: 2px solid white;
+ 	border-radius: 10px;
+ 	padding: 15px 0 15px 0;
+}
+section.bio > figure > img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+}
+section.bio > figure > figcaption {
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+img#alice {
+	width: 50%;
+}
+img#jane {
+	width: 80%;
+}
+img#pandemonica, img#willow {
+	width: 55%;
+}
+div.alice_official_skins, div.alice_dlc_skins, div.willow_skins {
+	text-align: center;
+}
+div.alice_official_skins, div.alice_dlc_skins, div.willow_skins {
+	margin: 20px 0;
+}
+.row {
+	float: left;
+}
+.row > img {
+	background-color: #141414;
+	border: 2px solid gray;
+	border-radius: 15px;
+	padding: 10px;
+}
+div.alice_official_skins > .row {
+	width: 20%;
+}
+div.alice_dlc_skins > .row {
+	width: 16.6%;
+}
+div.alice_official_skins > .row > img {
+	width: 50%;
+}
+div.alice_dlc_skins > .row > img {
+	width: 60%;
+}
+div.willow_skins > .row {
+	width: 14.2%;
+}
+div.willow_skins > .row > img {
+	width: 75%;
+}
+.row > img + p {
+	font-size: 1.1em;
+	margin-bottom: 20px;
+}
+.clear_float {
+	clear: both;
+}
+form {
+	background: black;
+	border: 2px solid white; 
+	padding: 15px;
+}
+form > fieldset {
+	border-radius: 3%;
+}
+input[type="text"] {
+	border-radius: 10%;
+	padding: 8px 12px 8px 12px;
+}
+

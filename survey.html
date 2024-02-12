@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link media="screen" rel="stylesheet" href="style/style.css">
+	<title>Survey</title>
+</head>
+<body>
+	<header>
+		<h1>Survey</h1>
+		<h2>
+			This page contains an example form.
+		</h2>
+	</header>
+	<form method="post" name="survey">
+		<fieldset>
+			<legend>Personal data</legend>
+			<p>Enter your name: <input type="text" name="name" required></p>
+			<p>Enter your surname: <input type="text" name="surname" required></p>
+			<p>
+				Your age is: <br>
+				<input type="radio" name="age" value="less_than_fourteen" required> Less than 14 <br>
+				<input type="radio" name="age" value="fourteen_to_seventeen"> 14-17 <br>
+				<input type="radio" name="age" value="seventeen_to_twentyone"> 17-21 <br>
+				<input type="radio" name="age" value="more_than_twentyone"> 21 or more <br>
+			</p>
+		</fieldset>
+		<fieldset>
+			<legend>Your day schedule:</legend>
+			<p>
+				How much do you sleep? <br>
+				<input type="radio" name="sleep" value="less_than_six" required> Less than 6 hours <br>
+				<input type="radio" name="sleep" value="six_to_eight"> 6-8 hours <br>
+				<input type="radio" name="sleep" value="eight_ten"> 8-10 hours <br>
+				<input type="radio" name="sleep" value="more_than_ten"> More than 10 hours <br>
+			</p>
+			<p>
+				How often do you eat? <br>
+				<input type="radio" name="food" value="three" required> Three times per day <br>
+				<input type="radio" name="food" value="four"> Four times per day <br>
+				<input type="radio" name="food" value="five"> Five times per day <br>
+			</p>
+			<p>
+				What would you prefer to do in your spare time? (select multiple) <br>
+				<input type="checkbox" name="leisure" value="reading"> Read a book <br>
+				<input type="checkbox" name="leisure" value="gaming"> Play a computer game <br>
+				<input type="checkbox" name="leisure" value="watching"> Watch film/TV <br>
+				<input type="checkbox" name="leisure" value="listening"> Listen to music <br>
+				<input type="checkbox" name="leisure" value="walking"> Take a walk <br>
+				<input type="checkbox" name="leisure" value="sleep"> Sleep/daydream <br>
+			</p>
+		</fieldset>
+		<br><input type="checkbox" name="agreement" value="yes" required> I agree to let developers of this survey analyze this data on their servers <br>
+		<br><input type="submit" name="survey"> <input type="reset" name="survey">
+	</form>
+</body>
+</html>
