@@ -22,6 +22,9 @@ h3 {
 header {
 	margin-bottom: 20px;
 }
+abbr {
+	cursor: help;
+}
 .header_hr, .footer_hr {
 	width: 90%;
 	border-radius: 50%;
@@ -82,7 +85,7 @@ section > h2 {
 }
 h2#char_name {
 	font-size: 1.8em;
-	letter-spacing: .25em;
+	letter-spacing: .12em;
 }
 section > hr {
 	margin-bottom: 20px;
