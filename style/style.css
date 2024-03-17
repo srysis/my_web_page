@@ -120,46 +120,48 @@ img#jane {
 img#pandemonica, img#willow {
 	width: 55%;
 }
-div.alice_official_skins, div.alice_dlc_skins, div.willow_skins {
+div#alice_official_skins, div#alice_dlc_skins, div#willow_skins {
 	text-align: center;
-}
-div.alice_official_skins, div.alice_dlc_skins, div.willow_skins {
 	margin: 20px 0;
 }
-.row {
+.image_table_row {
 	float: left;
 }
-.row > img {
+.image_table_row > img {
 	background-color: #141414;
 	border: 2px solid gray;
 	border-radius: 15px;
 	padding: 10px;
 }
-div.alice_official_skins > .row {
+div#alice_official_skins > .image_table_row {
 	width: 20%;
 }
-div.alice_dlc_skins > .row {
+div#alice_dlc_skins > .image_table_row {
 	width: 16.6%;
 }
-div.alice_official_skins > .row > img {
+div#alice_official_skins > .image_table_row > img {
 	width: 50%;
 }
-div.alice_dlc_skins > .row > img {
+div#alice_dlc_skins > .image_table_row > img {
 	width: 60%;
 }
-div.willow_skins > .row {
+div#willow_skins > .image_table_row {
 	width: 14.2%;
 }
-div.willow_skins > .row > img {
+div#willow_skins > .image_table_row > img {
 	width: 75%;
 }
-.row > img + p {
+.image_table_row > img + p {
 	font-size: 1.1em;
 	margin-bottom: 20px;
 }
-.clear_float {
+#clear_float {
 	clear: both;
 }
+
+
+
+
 form {
 	background: black;
 	border: 2px solid white; 
