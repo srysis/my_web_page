@@ -68,7 +68,13 @@ ul > li {
 	margin: 8px 0;
 }
 q {
+	display: block;
+	margin: 25px 0;
+	padding: 20px;
+	background-color: rgba(5, 5, 10, 1);
+	border-radius: 25px;
 	font-style: italic;
+	font-size: 1.15em;
 }
 main > section {
 	margin: 0px 15px 0px 15px;
