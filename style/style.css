@@ -68,12 +68,14 @@ ul > li {
 	margin: 8px 0;
 }
 q {
+	font-style: italic;
+}
+q.lorebook {
 	display: block;
 	margin: 25px 0;
 	padding: 20px;
 	background-color: rgba(5, 5, 10, 1);
 	border-radius: 25px;
-	font-style: italic;
 	font-size: 1.15em;
 }
 main > section {
@@ -165,7 +167,21 @@ div#willow_skins > .image_table_row > img {
 	clear: both;
 }
 
+/* scrollbar width */
+::-webkit-scrollbar {
+  	width: 8px;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  	background: #777;
+  	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  	background: #444;
+}
 
 
 form {
