@@ -20,13 +20,28 @@ h3 {
 	font-size: 1.4em;
 }
 header {
-	margin-bottom: 20px;
+	height: 70px;
+	position: relative;
+}
+header > h1, header > nav {
+	position: absolute;
+}
+header > h1 {
+	font-size: 2.4em;
+	left: 40px;
+	top: -12px;
+}
+header > nav {
+	font-size: 1.25em;
+	right: 20px;
+	top: 28px;
 }
 abbr {
 	cursor: help;
 }
 .header_hr, .footer_hr {
-	width: 90%;
+	width: 98%;
+	border-color: #aaa;
 	border-radius: 50%;
 }
 footer#index {
@@ -89,11 +104,12 @@ main > section, main > p {
 }
 section > h2 {
 	margin: 0;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 h2#char_name {
+	margin: 10px 0;
 	font-size: 1.8em;
-	letter-spacing: .12em;
+	letter-spacing: .1em;
 }
 section > hr {
 	margin-bottom: 20px;
@@ -103,7 +119,7 @@ section.bio > figure {
 	float: right;
 	width: 30%;
  	background-color: #141414;
- 	border: 2px solid white;
+ 	border: 2px solid #777;
  	border-radius: 10px;
  	padding: 15px 0 15px 0;
 }
