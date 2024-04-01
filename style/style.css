@@ -8,6 +8,9 @@
 	h3 {
 		font-size: 1.2em;
 	}
+	header > nav::-webkit-scrollbar {
+	  	height: 4px;
+	}
 	header > nav {
 		width: 500px;
 	}
