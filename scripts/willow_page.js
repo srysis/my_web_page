@@ -2,7 +2,7 @@
 
 let willow_skins_container = document.querySelector("div#willow_skins");
 let image_container = document.querySelector("div#image_container");
-let document_main = document.querySelector("main");
+let main_element = document.querySelector("main");
 
 if (willow_skins_container != null) {
 	willow_skins_container.addEventListener('click', function() {
@@ -25,12 +25,12 @@ function toggleImageFullscreen(option) {
 		img_tag.classList.add("willow");
 		image_container.append(img_tag);
 		document.body.style.overflow = "hidden";
-		document_main.style.marginRight = 2.5 + "%"; // compensate margin for hiding scrollbar, so the layout won't "jump"
+		main_element.style.marginRight = 2.5 + "%"; // compensate margin for hiding scrollbar, so the layout won't "jump"
 	} else if (option == false) {
 		image_container.style.display = "none";
 		let img_tag = document.querySelector("img.image_fullscreen");
 		img_tag.remove();
 		document.body.style.overflow = "visible";
-		document_main.style.marginRight = 2 + "%"; // back to original margin value
+		main_element.style.marginRight = 2 + "%"; // back to original margin value
 	}
 }

@@ -3,7 +3,7 @@
 let alice_official_skins_container = document.querySelector("div#alice_official_skins");
 let alice_dlc_skins_container = document.querySelector("div#alice_dlc_skins");
 let image_container = document.querySelector("div#image_container");
-let document_main = document.querySelector("main");
+let main_element = document.querySelector("main");
 
 if (alice_official_skins_container != null) {
 	alice_official_skins_container.addEventListener('click', function() {
@@ -34,12 +34,12 @@ function toggleImageFullscreen(option) {
 		img_tag.classList.add("alice");
 		image_container.append(img_tag);
 		document.body.style.overflow = "hidden";
-		document_main.style.marginRight = 2.5 + "%"; // compensate margin for hiding scrollbar, so the layout won't "jump"
+		main_element.style.marginRight = 2.5 + "%"; // compensate margin for hiding scrollbar, so the layout won't "jump"
 	} else if (option == false) {
 		image_container.style.display = "none";
 		let img_tag = document.querySelector("img.image_fullscreen");
 		img_tag.remove();
 		document.body.style.overflow = "visible";
-		document_main.style.marginRight = 2 + "%"; // back to original margin value
+		main_element.style.marginRight = 2 + "%"; // back to original margin value
 	}
 }
