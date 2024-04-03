@@ -8,5 +8,9 @@ header.addEventListener('click', function() {
 			alert("You are already here!");
 			event.preventDefault();
 		}
+		if (event.target.getAttribute("href") == "#") {
+			alert("In development.");
+			event.preventDefault();
+		}
 	}
 });
