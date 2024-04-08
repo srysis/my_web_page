@@ -8,7 +8,7 @@ header.addEventListener('click', function() {
 			alert("You are already here!");
 			event.preventDefault();
 		}
-		if (event.target.getAttribute("href") == "#") {
+		if ((event.target.getAttribute("href") == "#") && (event.target.getAttribute("title") != "You are already here!")) {
 			alert("In development.");
 			event.preventDefault();
 		}
