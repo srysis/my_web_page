@@ -112,10 +112,15 @@ q {
 }
 q.lorebook {
 	display: block;
-	margin: 25px 0;
+	width: 650px;
+	margin: 15px;
+	margin-right: 0;
+	border-radius: 15px;
+	border-left: 3px solid white;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
 	padding: 20px;
 	background-color: rgba(5, 5, 10, 1);
-	border-radius: 25px;
 	font-size: 1.15em;
 }
 main > section {
@@ -148,17 +153,17 @@ section.bio > figure {
  	border-radius: 10px;
  	padding: 15px 0 15px 0;
 }
-section.bio > figure > img {
-	display: block;
+section.bio > figure > img, section.bio > figure > figcaption {
 	margin-left: auto;
 	margin-right: auto;
+}
+section.bio > figure > img {
+	display: block;
 	padding: 30px;
 }
 section.bio > figure > figcaption {
 	text-align: center;
 	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
 }
 img#alice {
 	width: 50%;
@@ -221,10 +226,10 @@ div#image_container {
 	position: fixed;
 	background: rgba(0, 0, 0, 0.95);
 	display: none;
-	width: 100%;
-	height: 100%;
 	left: 0;
+	right: 0;
 	top: 0;
+	bottom: 0;
 }
 img.image_fullscreen.willow, img.image_fullscreen.alice {
 	background-color: black;
