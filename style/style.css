@@ -1,4 +1,10 @@
-@media (max-width: 1083px) {
+@media (max-width: 700px) {
+	header > nav {
+		display: none;
+	}
+}
+
+@media (max-width: 960px) {
 	main {
 		font-size: .9em;
 	}
@@ -9,7 +15,7 @@
 		font-size: 1em;
 	}
 	header > nav {
-		width: 500px;
+		width: 200px;
 	}
 	header > nav::-webkit-scrollbar {
 	  	height: 4px;
@@ -218,7 +224,7 @@ div#willow_skins > .image_table_row > img {
 em.image_caption {
 	font-size: .9em;
 }
-#clear_float {
+.clear_float {
 	clear: both;
 }
 
