@@ -45,7 +45,28 @@ h1 {
 h3 {
 	font-size: 1.4em;
 }
+
+/* New header layout, that uses flexbox */
 header {
+	width: 90%;
+	height: 70px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+header > h1, header > nav {
+	align-self: center;
+}
+header > h1 {
+	font-size: 2.4em;
+}
+header > nav {
+	font-size: 1.2em;
+}
+
+/* Old header layout, that uses positioning */
+/*header {
 	height: 70px;
 	position: relative;
 }
@@ -63,7 +84,8 @@ header > nav {
 	top: 28px;
 	white-space: nowrap;
 	overflow: auto;
-}
+}*/
+
 abbr {
 	cursor: help;
 }
