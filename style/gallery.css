@@ -1,8 +1,27 @@
 h2 {
 	font-size: 2em;
 }
-h3 {
-	font-size: 1.6em;
+div#gallery_switches {
+	text-align: center;
+	padding-bottom: 15px;
+}
+div#gallery_switches > span {
+	font-size: 1.5em;
+	padding: 0 5px;
+}
+div#gallery_switches > span > a {
+	transition: .3s;
+	border-radius: 15px;
+	padding: 5px 20px;
+}
+div#gallery_switches > span > a:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+a.clicked {
+	background-color: white;
+	color: black;
 }
 div#gallery {
 	padding: 0 15px;
@@ -12,8 +31,8 @@ div#gallery {
 	justify-content: space-between;
 }
 div.image_container {
-	height: 47vh;
-	padding: 25px 0;
+	height: 45vh;
+	padding: 15px 0;
 }
 div.image_container > img {
 	max-height: 100%;
