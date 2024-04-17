@@ -89,7 +89,7 @@ header > nav {
 abbr {
 	cursor: help;
 }
-.header_hr, .footer_hr {
+.header_hr, .footer_hr, .gallery_hr {
 	width: 98%;
 	border-color: #aaa;
 	border-radius: 50%;
