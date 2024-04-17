@@ -6,7 +6,7 @@
 	<link media="screen" rel="stylesheet" href="style/style.css">
 	<link media = "screen "rel="stylesheet" href="style/gallery.css">
 	<script src="scripts/main.js" defer></script>
-	<script src="scripts/gallery.js" async></script>
+	<script src="scripts/gallery.js" defer></script>
 	<title>Gallery</title>
 </head>
 <body>
@@ -22,11 +22,17 @@
 	<hr class="header_hr">
 	<main>
 		<h2>Gallery</h2>
-		<h3>Alice</h3>
+		<div id="gallery_switches">
+			<span><a id="alice">Alice</a></span>
+			<span><a id="jane">Jane</a></span>
+			<span><a id="pandemonica">Pandemonica</a></span>
+			<span><a id="willow">Willow</a></span>
+		</div>
+		<hr style='display: none;' class="gallery_hr">
 		<div id="gallery"></div>
+		<hr style="display: none;" class="gallery_hr">
 	</main>
 	<footer>
-		<h3><a href="index.html" class="back_link">&lt;&lt;Go back</a></h3>
 		<p><em>&copy; srysis, 2024</em></p>
 	</footer>
 </body>
