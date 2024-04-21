@@ -166,6 +166,7 @@ section > h2 {
 }
 h2#char_name {
 	margin: 10px 0;
+	padding-left: .1em;
 	font-size: 1.8em;
 	letter-spacing: .1em;
 }
