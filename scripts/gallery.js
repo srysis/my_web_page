@@ -39,55 +39,93 @@ function generateGallery(current_character) {
 	}
 }
 
+function getRandomIntInclusive(min, max) {
+	const minCeiled = Math.ceil(min);
+	const maxFloored = Math.floor(max);
+	return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+}
+
+function generateNumbersSet() {
+	let set = new Set();
+	while (set.size != 20) {
+		set.add(getRandomIntInclusive(1, 20));
+	}
+	return set;
+}
+
 function addImages(gallery_element, path) {
-	for (let counter = 1; counter <= 20; counter++) {
+	let images_numbers = generateNumbersSet();
+	for (let number of images_numbers) {
 		let image_container = document.createElement("div");
 		image_container.setAttribute("class", "image_container");
 		let image_element = document.createElement("img");
-		image_element.setAttribute("src", path + counter + ".png");
+		image_element.setAttribute("src", path + number + ".png");
 		image_container.append(image_element);
 		gallery_element.append(image_container);
 	}
 }
 
 
-let gallery_switches = document.querySelector("div#gallery_switches");
-let current_character;
-let current_active_switch = document.querySelector('a.clicked');
+window.addEventListener('load', function() {
+	let gallery_switches = document.querySelector("div#gallery_switches");
+	let current_character;
+	let current_active_switch = document.querySelector('a.clicked');
 
-gallery_switches.addEventListener('click', function() {
-	switch (event.target.id) {
-	case 'alice':
-		current_character = 'Alice';
-		event.target.classList.add('clicked');
-		if (current_active_switch != null) current_active_switch.classList.remove('clicked');
-		current_active_switch = event.target;
-		generateGallery(current_character);
-		break;
-	case 'jane':
-		current_character = 'Jane';
-		event.target.classList.add('clicked');
-		if (current_active_switch != null) current_active_switch.classList.remove('clicked');
-		current_active_switch = event.target;
-		generateGallery(current_character);
-		break;
-	case 'pandemonica':
-		current_character = 'Pandemonica';
-		event.target.classList.add('clicked');
-		if (current_active_switch != null) current_active_switch.classList.remove('clicked');
-		current_active_switch = event.target;
-		generateGallery(current_character);
-		break;
-	case 'willow':
-		current_character = 'Willow';
-		event.target.classList.add('clicked');
-		if (current_active_switch != null) current_active_switch.classList.remove('clicked');
-		current_active_switch = event.target;
-		generateGallery(current_character);
-		break;
-	}
-	console.log(current_character);
+	gallery_switches.addEventListener('click', function() {
+		switch (event.target.id) {
+		case 'alice':
+			current_character = 'Alice';
+
+			event.target.classList.add('clicked');
+			if (current_active_switch != null) { 
+				if (event.target != current_active_switch) current_active_switch.classList.remove('clicked'); 
+			}
+			current_active_switch = event.target;
+
+			generateGallery(current_character);
+			break;
+
+		case 'jane':
+			current_character = 'Jane';
+
+			event.target.classList.add('clicked');
+			if (current_active_switch != null) { 
+				if (event.target != current_active_switch) current_active_switch.classList.remove('clicked'); 
+			}
+			current_active_switch = event.target;
+
+			generateGallery(current_character);
+			break;
+
+		case 'pandemonica':
+			current_character = 'Pandemonica';
+
+			event.target.classList.add('clicked');
+			if (current_active_switch != null) { 
+				if (event.target != current_active_switch) current_active_switch.classList.remove('clicked'); 
+			}
+			current_active_switch = event.target;
+
+			generateGallery(current_character);
+			break;
+
+		case 'willow':
+			current_character = 'Willow';
+
+			event.target.classList.add('clicked');
+			if (current_active_switch != null) { 
+				if (event.target != current_active_switch) current_active_switch.classList.remove('clicked'); 
+			}
+			current_active_switch = event.target;
+
+			generateGallery(current_character);
+			break;
+		}
+		console.log(current_character);
+	});
+	console.log("page loaded");
 });
+
 
 
 
