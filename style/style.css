@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+/*@media (max-width: 700px) {
 	header > nav {
 		display: none;
 	}
@@ -20,7 +20,7 @@
 	header > nav::-webkit-scrollbar {
 	  	height: 4px;
 	}
-}
+}*/
 
 
 body {
@@ -35,7 +35,7 @@ main {
 	background-color: rgba(16, 16, 20, 0.85);
 	margin: 2%;
 	border: 3px solid #444;
-	border-radius: 3%;
+	border-radius: 15px;
 	padding: 2% 3%;
 	transition: font-size .3s linear;
 }
@@ -65,7 +65,7 @@ header > nav {
 	font-size: 1.2em;
 }
 
-/* Old header layout, that uses positioning */
+/* Old header layout, that used positioning */
 /*header {
 	height: 70px;
 	position: relative;
