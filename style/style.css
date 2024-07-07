@@ -22,7 +22,9 @@
 	}
 }*/
 
-
+* {
+	box-sizing: border-box;
+}
 body {
 	background: #232427 url(../files/background-2.jpg) bottom center no-repeat fixed;
 	color: #eee;
@@ -188,20 +190,20 @@ section.bio > figure > img, section.bio > figure > figcaption {
 }
 section.bio > figure > img {
 	display: block;
-	padding: 30px;
+	padding: 15px;
 }
 section.bio > figure > figcaption {
 	text-align: center;
 	width: 80%;
 }
 img#alice {
-	width: 50%;
+	width: 65%;
 }
 img#jane {
-	width: 80%;
+	width: 85%;
 }
 img#pandemonica, img#willow {
-	width: 55%;
+	width: 70%;
 }
 div#alice_official_skins, div#alice_dlc_skins, div#willow_skins {
 	text-align: center;
@@ -214,7 +216,7 @@ div#alice_official_skins, div#alice_dlc_skins, div#willow_skins {
 	background-color: #141414;
 	border: 2px solid gray;
 	border-radius: 15px;
-	padding: 15px;
+	padding: 10px;
 	cursor: pointer;
 }
 .image_table_row > img:hover {
@@ -236,13 +238,13 @@ div#willow_skins > .image_table_row {
 	width: 14.2%;
 }
 div#willow_skins > .image_table_row > img {
-	width: 75%;
+	width: 85%;
 }
 .image_table_row > img + p {
 	display: inline-block;
 	font-size: 1.1em;
 	margin-bottom: 20px;
-	width: 120px;
+	width: 125px;
 }
 em.image_caption {
 	font-size: .9em;
@@ -269,9 +271,9 @@ img.image_fullscreen.willow, img.image_fullscreen.alice {
 	margin-right: auto;
 }
 img.image_fullscreen.willow {
-	padding: 50px 150px;
-	margin-top: 11%;
-	width: 20%;
+	padding: 50px;
+	margin-top: 13%;
+	width: 25%;
 }
 
 img.image_fullscreen.alice {
@@ -294,17 +296,4 @@ img.image_fullscreen.alice {
   	background: #444;
 }
 
-
-form {
-	background: black;
-	border: 2px solid white; 
-	padding: 15px;
-}
-form > fieldset {
-	border-radius: 3%;
-}
-input[type="text"] {
-	border-radius: 10%;
-	padding: 8px 12px 8px 12px;
-}
 
