@@ -48,3 +48,22 @@ div.image_container > img:hover {
 	box-shadow: 0 0 10px black;
 	cursor: pointer;
 }
+div#image_fullscreen_overlay_container {
+	display: none;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.95);
+}
+img.image_fullscreen {
+	display: block;
+	padding: 30px;
+	border: 2px solid gray;
+	border-radius: 5px;
+	margin: auto;
+	margin-top: 5.5%;
+	height: 80vh;
+	background-color: black;
+}
