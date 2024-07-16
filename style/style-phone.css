@@ -130,4 +130,15 @@
 	div#willow_skins > .image_table_row > img {
 		width: 100%;
 	}
+
+	img.image_fullscreen.willow {
+		padding: 3%;
+		margin-top: 58%;
+		width: 70%;
+	}
+	img.image_fullscreen.alice {
+		padding: 3%;
+		margin-top: 18%;
+		width: 60%;
+	}
 }
