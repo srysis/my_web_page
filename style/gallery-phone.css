@@ -1,0 +1,31 @@
+@media screen and (max-width: 550px) {
+	div#gallery_switches {
+		display: flex;
+		flex-direction: column;
+	}
+	div#gallery_switches > span {
+		margin: 10px 0;
+	}
+
+
+	div#gallery {
+		justify-content: center;
+	}
+	div.image_container {
+		height: 25vh;
+		padding: 5px;
+	}
+	div.image_container > img {
+		width: 100%;
+	}
+
+
+	img.image_fullscreen {
+		object-fit: contain;
+		width: 98%;
+		height: 60vh;
+		margin-top: 40%;
+		padding: 10px;
+	}
+
+}
