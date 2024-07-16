@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link media="screen" rel="stylesheet" href="style/style.css">
+	<link media="screen" rel="stylesheet" href="style/style-phone.css">
 	<link media = "screen "rel="stylesheet" href="style/gallery.css">
+	<link media = "screen "rel="stylesheet" href="style/gallery-phone.css">
 	<script src="scripts/main.js" defer></script>
 	<script src="scripts/gallery.js" defer></script>
 	<title>Gallery</title>
@@ -20,6 +22,18 @@
 		</nav>
 	</header>
 	<hr class="header_hr">
+	<aside>
+		<button id="sidebar_toggle" class="inactive"><img src="files/bars-solid.svg"></button>
+		<div class="overlay hidden"></div>
+		<div id="aside_content" class="hidden">
+			<ul>
+				<li><a href="#">Portfolio</a><hr></li>
+				<li><a href="#">Characters</a><hr></li>
+				<li><a href="#" title="You are already here!">Gallery</a><hr></li>
+				<li><a href="about_me.html">About me</a><hr></li>
+			</ul>
+		</div>
+	</aside>
 	<main>
 		<h2>Gallery</h2>
 		<div id="gallery_switches">
