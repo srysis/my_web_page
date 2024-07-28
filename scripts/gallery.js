@@ -5,6 +5,8 @@ const PATH_TO_IMAGES_OF_JANE = "images/Jane/";
 const PATH_TO_IMAGES_OF_PANDEMONICA = "images/Pandemonica/";
 const PATH_TO_IMAGES_OF_WILLOW = "images/Willow/";
 
+let clientWidth = document.documentElement.clientWidth;
+
 let main_element = document.querySelector("main");
 
 let image_fullscreen_container = document.querySelector("div#image_fullscreen_overlay_container");
@@ -85,14 +87,23 @@ function displayImageInFullscreen(option, image_source = undefined) {
 		image_element.setAttribute("src", image_source);
 		image_element.classList.add("image_fullscreen");
 		image_fullscreen_container.append(image_element);
+
 		document.body.style.overflow = "hidden";
-		main_element.style.marginRight = 2.5 + "%"; // compensate margin for hiding scrollbar, so the layout won't "jump"
+
+		if (clientWidth >= 550) { 						   // check if it is the desktop layout
+			document.body.style.marginRight = 0.4 + "%";   // add a small amount of margin to prevent "jumping" layout
+		}
+
 	} else {
 		image_fullscreen_container.style.display = "none";
 		let image_element = document.querySelector("img.image_fullscreen");
 		image_element.remove();
+
 		document.body.style.overflow = "visible";
-		main_element.style.marginRight = 2 + "%"; // compensate margin for hiding scrollbar, so the layout won't "jump"
+
+		if (clientWidth >= 550) { 					  	  // check if it is the desktop layout
+			document.body.style.marginRight = 0; 	      // remove added margin
+		}
 	}
 }
 
