@@ -24,15 +24,14 @@ a.clicked {
 	color: black;
 }
 div#gallery {
-	padding: 0 15px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 div.image_container {
-	height: 45vh;
-	padding: 15px 0;
+	height: 35vh;
+	padding: 10px 0;
 }
 div.image_container > img {
 	max-height: 100%;
