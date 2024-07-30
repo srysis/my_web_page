@@ -11,7 +11,6 @@ let main_element = document.querySelector("main");
 
 let image_fullscreen_container = document.querySelector("div#image_fullscreen_overlay_container");
 
-
 function generateGallery(current_character) {
 	let gallery_element = document.querySelector("div#gallery");
 
@@ -77,19 +76,17 @@ function addImages(gallery_element, path) {
 
 function addEventListenerToImage(image) {
 	image.addEventListener("click", function() {
-		event.target.classList.toggle("current_photo");
-
 		displayImageInFullscreen(true, event.target.getAttribute("src"));
 	});
 }
 
 function displayImageInFullscreen(option, image_source = undefined) {
 	if (option == true) {
-		image_fullscreen_container.classList.toggle("inactive");
-		image_fullscreen_container.classList.toggle("active");
-
-		let image_element = document.querySelector("img.image_fullscreen");
+		image_fullscreen_container.style.display = "block";
+		let image_element = document.createElement("img");
 		image_element.setAttribute("src", image_source);
+		image_element.classList.add("image_fullscreen");
+		image_fullscreen_container.append(image_element);
 
 		document.body.style.overflow = "hidden";
 
@@ -97,68 +94,21 @@ function displayImageInFullscreen(option, image_source = undefined) {
 			document.body.style.marginRight = 0.4 + "%";   // add a small amount of margin to prevent "jumping" layout
 		}
 
-		addEventListenerToButtons();
-
 	} else {
-		image_fullscreen_container.classList.toggle("inactive");
-		image_fullscreen_container.classList.toggle("active");
-
+		image_fullscreen_container.style.display = "none";
 		let image_element = document.querySelector("img.image_fullscreen");
-		image_element.setAttribute("src", " ");
+		image_element.remove();
 
 		document.body.style.overflow = "visible";
 
 		if (clientWidth >= 550) { 					  	  // check if it is the desktop layout
 			document.body.style.marginRight = 0; 	      // remove added margin
 		}
-
-		removeEventListenersFromButtons();
 	}
 }
 
-function switchToNextImage() {
-	let current_photo = document.querySelector("img.current_photo");
 
-	if (current_photo.parentElement.nextElementSibling != null) {
-		current_photo.classList.toggle("current_photo");
-		current_photo.parentElement.nextElementSibling.firstElementChild.classList.toggle("current_photo"); 	// don't ask.
-
-		let image_container = document.querySelector("img.image_fullscreen");
-		image_container.setAttribute("src", document.querySelector("img.current_photo").getAttribute("src"));
-	}
-}
-
-function switchToPreviousImage () {
-	let current_photo = document.querySelector("img.current_photo");
-
-	if (current_photo.parentElement.previousElementSibling != null) {
-		current_photo.classList.toggle("current_photo");
-		current_photo.parentElement.previousElementSibling.firstElementChild.classList.toggle("current_photo"); // don't ask.
-
-		let image_container = document.querySelector("img.image_fullscreen");
-		image_container.setAttribute("src", document.querySelector("img.current_photo").getAttribute("src"));
-	}
-}
-
-function addEventListenerToButtons() {
-	let prev_photo_button = document.querySelector("#prev_photo");
-	let next_photo_button = document.querySelector("#next_photo");	
-
-	prev_photo_button.addEventListener("click", switchToPreviousImage);
-	next_photo_button.addEventListener("click", switchToNextImage);
-
-}
-
-function removeEventListenersFromButtons() {
-	let prev_photo_button = document.querySelector("#prev_photo");
-	let next_photo_button = document.querySelector("#next_photo");
-
-	prev_photo_button.removeEventListener("click", switchToPreviousImage);
-	next_photo_button.removeEventListener("click", switchToNextImage);
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
 	let gallery_switches = document.querySelector("div#gallery_switches");
 	let current_character;
 	let current_active_switch = document.querySelector('a.clicked');
@@ -217,10 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	image_fullscreen_container.addEventListener("click", function() {
-		if (event.target.tagName == "DIV") { 
-			displayImageInFullscreen(false);
-			document.querySelector("img.current_photo").classList.toggle("current_photo");
-		};
+		if (event.target.tagName == "DIV") displayImageInFullscreen(false);
 	});
 
 	console.log("page loaded");
