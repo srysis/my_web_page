@@ -10,6 +10,7 @@ let clientWidth = document.documentElement.clientWidth;
 let main_element = document.querySelector("main");
 
 let image_fullscreen_container = document.querySelector("div#image_fullscreen_overlay_container");
+let close_image_fullscreen_container_button = document.querySelector("#close_button");
 
 
 function generateGallery(current_character) {
@@ -222,6 +223,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			document.querySelector("img.current_photo").classList.toggle("current_photo");
 		};
 	});
+
+	close_image_fullscreen_container_button.addEventListener("click", function() {
+		displayImageInFullscreen(false);
+		document.querySelector("img.current_photo").classList.toggle("current_photo");
+	});
+
 
 	console.log("page loaded");
 
