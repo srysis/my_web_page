@@ -1,6 +1,15 @@
 h2 {
 	font-size: 2em;
 }
+a.clicked {
+	background-color: white;
+	color: black;
+}
+button {
+	cursor: pointer;
+}
+
+
 div#gallery_switches {
 	text-align: center;
 	padding-bottom: 15px;
@@ -19,10 +28,8 @@ div#gallery_switches > span > a:hover {
 	color: black;
 	cursor: pointer;
 }
-a.clicked {
-	background-color: white;
-	color: black;
-}
+
+
 div#gallery {
 	display: flex;
 	flex-wrap: wrap;
@@ -47,18 +54,53 @@ div.image_container > img:hover {
 	box-shadow: 0 0 10px black;
 	cursor: pointer;
 }
+
+
 div#image_fullscreen_overlay_container {
-	display: none;
 	position: fixed;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 0;
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(0, 0, 0, 0.98);
+}
+div#image_fullscreen_overlay_container.inactive {
+	display: none;
+}
+div#image_fullscreen_overlay_container.active {
+	display: flex;
+	justify-content: space-between;
+}
+#prev_photo, #next_photo {
+	height: 88%;
+	margin: auto 0;
+	border: none;
+	padding: 3.5%;
+	font-size: 3em;
+	background-color: transparent;
+	color: #fff;
+}
+#prev_photo:hover, #next_photo:hover, #close_button:hover {
+	background-color: #333;
+}
+#close_button {
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	border: none;
+	padding: 4px 8px;
+	background-color: transparent;
+}
+#close_button > img {
+	width: 36px;
+	height: 36px;
+	filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(65deg) brightness(105%) contrast(101%);
 }
 img.image_fullscreen {
 	display: block;
+	width: 60vw;
 	height: 80vh;
+	object-fit: contain;
 	padding: 30px;
 	border: 2px solid gray;
 	border-radius: 5px;
