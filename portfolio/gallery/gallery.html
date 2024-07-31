@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link media="screen" rel="stylesheet" href="../../style/style.css">
+	<link media="screen" rel="stylesheet" href="../../style/style-phone.css">
+	<link media ="screen" rel="stylesheet" href="style/gallery.css">
+	<link media ="screen" rel="stylesheet" href="style/gallery-phone.css">
+	<script src="scripts/gallery.js" defer></script>
+	<title>Gallery</title>
+</head>
+<body>
+	<!-- <header>
+		<h1><a href="index.html" id="index_link">My personal web-site</a></h1>
+		<nav>
+			<a href="#">Portfolio</a>
+			<a href="characters.html">Characters</a>
+			<a href="#" title="You are already here!">Gallery</a>
+			<a href="about_me.html">About me</a>
+		</nav>
+	</header>
+	<hr class="header_hr">
+	<aside>
+		<button id="sidebar_toggle" class="inactive"><img src="files/bars-solid.svg"></button>
+		<div class="overlay hidden"></div>
+		<div id="aside_content" class="hidden">
+			<ul>
+				<li><a href="#">Portfolio</a><hr></li>
+				<li><a href="#">Characters</a><hr></li>
+				<li><a href="#" title="You are already here!">Gallery</a><hr></li>
+				<li><a href="about_me.html">About me</a><hr></li>
+			</ul>
+		</div>
+	</aside> -->
+	<main>
+		<h2>Gallery</h2>
+		<div id="gallery_switches">
+			<span><a id="alice">Alice</a></span>
+			<span><a id="jane">Jane</a></span>
+			<span><a id="pandemonica">Pandemonica</a></span>
+			<span><a id="willow">Willow</a></span>
+		</div>
+		<hr style='display: none;' class="gallery_hr">
+		<div id="gallery"></div>
+		<hr style="display: none;" class="gallery_hr">
+	</main>
+	<footer>
+		<p><em>&copy; srysis, 2024</em></p>
+	</footer>
+	<div id="image_fullscreen_overlay_container" class="inactive">
+		<button id="prev_photo"><</button>
+		<img class="image_fullscreen">
+		<button id="next_photo">></button>
+		<button id="close_button"><img src="cross.svg"></button>
+	</div>
+</body>
+</html>

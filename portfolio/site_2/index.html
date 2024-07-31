@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>COVID-19</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" type="text/css" href="style/style-phone.css">
+	<script src="scripts/index.js" defer></script>
+</head>
+<body>
+	<header>
+		<button id="sidebar_menu"><img src="files/bars-solid.svg"></button>
+		<nav id = "header_nav">
+			<div id = "search">
+				<img src="files/magnifying-glass-solid.svg">
+			</div>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">TAKE ACTION</a></li>
+				<li style="padding: 1px 3%;"><a href="#"><strong>CORONA</strong></a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">DOCTORS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<div id = "user">
+				<img src="files/user-solid.svg">
+			</div>
+		</nav>
+		<div id = "header_title">
+			<h1>Care early</h1>
+			<h1>Coronavirus</h1>
+			<br><br>
+			<div class="flex_container">
+				<button class="more red">Read More</button>
+				<button id="about_button">About us</button>
+			</div>
+		</div>
+	</header>
+	<aside class="hidden">
+		<div class="overlay"></div>
+		<div id="aside_content" class="hidden">
+			<input type="search" name="search" id="search_field" placeholder="Search on website">
+			<button id="search_button"><img src="files/magnifying-glass-solid.svg"></button>
+			<button id="login">LOG IN</button>
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">TAKE ACTION</a></li>
+				<li><a href="#">CORONA</a></li>
+				<li><a href="#">NEWS</a></li>
+				<li><a href="#">DOCTORS</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+	</aside>
+	<section id="about_corona">
+		<div class="flex_container">
+			<div class="text_and_button">
+				<h3>About Corona Virus</h3>
+				<hr>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat mauris vitae posuere faucibus. Ut mattis varius quam vitae mattis. Suspendisse ac egestas lectus, ut faucibus risus. Integer posuere pharetra gravida. Sed enim nulla, eleifend eu odio eget, egestas dignissim leo. Quisque efficitur eros sit amet pulvinar fermentum. Proin pharetra ex ac feugiat rutrum. Nam vestibulum dui id sem sodales, at egestas orci efficitur. Proin semper urna a libero volutpat porttitor. Suspendisse sed vulputate mi. Fusce nunc massa, lacinia sit amet elit non, dapibus lacinia sem. Integer et tellus dictum urna rhoncus tincidunt nec sed leo. Duis turpis lacus, fermentum eget varius et, pretium et arcu.</p>
+				<br>
+				<button class="more blue" style="padding: 2% 10%;">READ MORE</button>
+			</div>
+			<div class="image">
+				<img src="files/corona.png">
+			</div>
+		</div>
+	</section>
+	<section id="symptoms">
+		<div class="flex_container">
+			<div class="image">
+				<img src="files/symptoms.png">
+			</div>
+			<div class="text_and_button">
+				<h2>CORONAVIRUS WHAT IS IT?</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat mauris vitae posuere faucibus. Ut mattis varius quam vitae mattis. Suspendisse ac egestas lectus, ut faucibus risus. Integer posuere pharetra gravida. Sed enim nulla, eleifend eu odio eget, egestas dignissim leo.</p>
+				<br>
+				<button class="more blue">READ MORE</button>
+			</div>
+		</div>
+	</section>
+	<section id="protection">
+		<div id="protection_title">
+			<h2>HOW TO PROTECT YOURSELF</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat mauris vitae posuere faucibus.</p>
+		</div>
+		<div id="protection_methods">
+			<div class="overlay"></div>
+			<div class="flex_container">
+				<div id="mask">
+					<div class="content">
+						<div class="flex_container">
+							<div class="image_container">
+								<img src="files/protection/sick.png">
+							</div>
+							<div class="text_container">
+								<h3>Wear a Mask</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget luctus turpis. Aenean dignissim, tortor sed dapibus varius, turpis augue facilisis libero, vitae feugiat est enim quis magna. Aliquam et euismod quam.</p>
+								<button class="more blue">READ MORE</button>
+							</div>
+						</div>
+					</div>
+					<br>
+					<button class="more blue">READ MORE</button>
+				</div>
+				<div id="wash_hands">
+					<div class="content">
+						<div class="flex_container">
+							<div class="image_container">
+								<img src="files/protection/hand-wash.png">
+							</div>
+							<div class="text_container">
+								<h3>Wash Your Hands</h3>
+								<p>Curabitur egestas lectus a mauris suscipit mattis. Fusce nisi nisl, molestie ut elit a, elementum blandit ex. Pellentesque et orci urna. Ut aliquam sed lorem ut posuere. Integer luctus nisl sed justo scelerisque, sed eleifend turpis suscipit.</p>
+								<button class="more red">READ MORE</button>
+							</div>
+						</div>
+					</div>
+					<br>
+					<button class="more red">READ MORE</button>
+				</div>
+				<div id="home">
+					<div class="content">
+						<div class="flex_container">
+							<div class="image_container">
+								<img src="files/protection/real-estate.png">
+							</div>
+							<div class="text_container">
+								<h3>Stay at Home</h3>
+								<p>Mauris suscipit libero erat. Nullam in erat pellentesque, accumsan sem quis, vestibulum nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer interdum eu lorem id finibus. Nunc a mauris ex.</p>
+								<button class="more blue">READ MORE</button>
+							</div>
+						</div>
+					</div>
+					<br>
+					<button class="more blue">READ MORE</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="cases">
+		<h2>CORONAVIRUS CASES</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum tincidunt sodales. Donec eget augue sagittis, rutrum nisi eu, suscipit libero. Praesent a elit quis turpis lacinia tristique. Cras elit leo, posuere dignissim neque sit amet, viverra eleifend est.</p>
+		<div class="flex_container">
+			<div id="case_1">
+				<div class="image_and_button">
+					<button class="more red">READ MORE</button>
+				</div>
+				<div class="text">
+					<h3>Case 01</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum tincidunt sodales. Donec eget augue sagittis, rutrum nisi eu, suscipit libero. Praesent a elit quis turpis lacinia tristique. Cras elit leo, posuere dignissim neque sit amet, viverra eleifend est. Nam imperdiet velit turpis. Nam sed urna ultricies, dictum lacus ac, dictum metus. Aliquam ut pharetra leo. Cras maximus quam nec lectus volutpat congue. Donec vestibulum, ex a rutrum iaculis, dui dui varius sapien, non vulputate sem lorem lobortis magna.</p>
+				</div>
+			</div>
+			<div id="case_2">
+				<div class="image_and_button">
+					<button class="more red">READ MORE</button>
+				</div>
+				<div class="text">
+					<h3>Case 02</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum tincidunt sodales. Donec eget augue sagittis, rutrum nisi eu, suscipit libero. Praesent a elit quis turpis lacinia tristique. Cras elit leo, posuere dignissim neque sit amet, viverra eleifend est. Nam imperdiet velit turpis. Nam sed urna ultricies, dictum lacus ac, dictum metus. Aliquam ut pharetra leo. Cras maximus quam nec lectus volutpat congue. Donec vestibulum, ex a rutrum iaculis, dui dui varius sapien, non vulputate sem lorem lobortis magna.</p>
+				</div>
+			</div>
+			<div id="case_3">
+				<div class="image_and_button">
+					<button class="more red">READ MORE</button>
+				</div>
+				<div class="text">
+					<h3>Case 03</h3>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum tincidunt sodales. Donec eget augue sagittis, rutrum nisi eu, suscipit libero. Praesent a elit quis turpis lacinia tristique. Cras elit leo, posuere dignissim neque sit amet, viverra eleifend est. Nam imperdiet velit turpis. Nam sed urna ultricies, dictum lacus ac, dictum metus. Aliquam ut pharetra leo. Cras maximus quam nec lectus volutpat congue. Donec vestibulum, ex a rutrum iaculis, dui dui varius sapien, non vulputate sem lorem lobortis magna.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="doctors">
+		<h2>WHAT DOCTORS SAY...</h2>
+		<div class="flex_container">
+			<div class="doctor">
+				<div class="content">
+					<div class="image_container">
+						<img src="files/doctors/1.png">
+					</div>
+					<div class="text_container">
+						<h3>DR. GOLAP DEN</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus neque, viverra in venenatis nec, pretium nec lorem. Curabitur ac interdum libero. Nunc dapibus ut neque id fermentum. Donec pretium tellus id velit consequat, non efficitur tortor convallis. Morbi ultricies massa ut pharetra volutpat. Sed ultricies dignissim neque. Sed eleifend sollicitudin velit.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="doctor">
+				<div class="content">
+					<div class="image_container">
+						<img src="files/doctors/2.png">
+					</div>
+					<div class="text_container">
+						<h3>DR. GOLAP DEN</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus neque, viverra in venenatis nec, pretium nec lorem. Curabitur ac interdum libero. Nunc dapibus ut neque id fermentum. Donec pretium tellus id velit consequat, non efficitur tortor convallis. Morbi ultricies massa ut pharetra volutpat. Sed ultricies dignissim neque. Sed eleifend sollicitudin velit.
+						</p>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="keep_updated">
+		<h2>GET EVERY UPDATE...</h2>
+		<div id="form_container">
+			<form method="post">
+				<div id="input_container">
+					<input type="text" name="email_address" placeholder="YOUR EMAIL">
+					<span id="error_tooltip">ERROR</span>
+				</div>
+				<input type="submit" name="subscribe" value="SUBSCRIBE NOW">
+			</form>
+			<div id="subscription_success">
+				<h3>YOU HAVE SUBSCRIBED TO THE NEWSLETTER</h3>
+			</div>
+		</div>
+		
+	</section>
+	<footer>
+		<div class="flex_container">
+			<div id="resources">
+				<h3>RESOURCES</h3>
+				<p><a href="#">What we do</a></p>
+				<p><a href="#">Media</a></p>
+				<p><a href="#">Travel Advice</a></p>
+				<p><a href="#">Protection</a></p>
+				<p><a href="#">Care</a></p>
+			</div>
+			<div id="about">
+				<h3>ABOUT</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacus neque, viverra in venenatis nec, pretium nec lorem. Curabitur ac interdum libero. Nunc dapibus ut neque id fermentum. Donec pretium tellus id velit consequat, non efficitur tortor convallis. Morbi ultricies massa ut pharetra volutpat. Sed ultricies dignissim neque. Sed eleifend sollicitudin velit.</p>
+			</div>
+			<div id="contacts">
+				<h3>CONTACT US</h3>
+				<ul>
+					<li>Your address</li>
+					<li>Your phone number</li>
+					<li>Your email</li>
+				</ul>
+			</div>
+			<div id="countries">
+				<h3>COUNTRIES</h3>
+				<img src="files/footer/map.png">
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
