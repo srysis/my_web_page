@@ -16,7 +16,7 @@
 		display: block;
 		position: fixed;
 		top: 0;
-		z-index: 2;
+		z-index: 1;
 		border: none;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;
