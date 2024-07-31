@@ -217,13 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		console.log(current_character);
 	});
 
-	image_fullscreen_container.addEventListener("click", function() {
-		if (event.target.tagName == "DIV") { 
-			displayImageInFullscreen(false);
-			document.querySelector("img.current_photo").classList.toggle("current_photo");
-		};
-	});
-
 	close_image_fullscreen_container_button.addEventListener("click", function() {
 		displayImageInFullscreen(false);
 		document.querySelector("img.current_photo").classList.toggle("current_photo");
