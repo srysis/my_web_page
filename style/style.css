@@ -14,7 +14,7 @@ header, h1, main > h2, main > h3, footer {
 }
 main {
 	background-color: rgba(16, 16, 20, 0.85);
-	margin: 2%;
+	margin: 1% 2%;
 	border: 3px solid #444;
 	border-radius: 15px;
 	padding: 2% 3%;
