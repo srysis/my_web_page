@@ -1,0 +1,57 @@
+@media screen and (max-width: 550px) {
+	main > section {
+		margin: 0 10px;
+	}
+
+	q.lorebook {
+		width: 90%;
+	}
+
+	section.bio > figure {
+		float: none;
+		width: auto;
+	}
+
+	img#alice {
+		width: 75%;
+	}
+	img#jane {
+		width: 95%;
+	}
+	img#pandemonica, img#willow {
+		width: 80%;
+	}
+	.image_table_row {
+		margin: 0 10px;
+	}
+	.image_table_row > img {
+		border-radius: 10px;
+		padding: 5px;
+	}
+	.image_table_row > img + p {
+		width: 100%;
+	}
+	div#alice_official_skins > .image_table_row, div#alice_dlc_skins > .image_table_row {
+		width: 40%;
+	}
+	div#alice_official_skins > .image_table_row > img, div#alice_dlc_skins > .image_table_row > img {
+		width: 100%;
+	}
+	div#willow_skins > .image_table_row {
+		width: 40%;
+	}
+	div#willow_skins > .image_table_row > img {
+		width: 100%;
+	}
+
+	img.image_fullscreen.willow {
+		padding: 3%;
+		margin-top: 58%;
+		width: 70%;
+	}
+	img.image_fullscreen.alice {
+		padding: 3%;
+		margin-top: 18%;
+		width: 60%;
+	}
+}
