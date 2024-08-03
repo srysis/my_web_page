@@ -10,6 +10,48 @@ header > h1 {
 }
 
 
+div#flex_container {
+	display: flex;
+}
+div.flex_column {
+	display: flex;
+	flex-wrap: wrap;
+	width: 50%;
+}
+
+
+div.link_to_character {
+	display: flex;
+	width: 100%;
+	margin: 1%;
+	border: 5px solid #222;
+	border-radius: 10px;
+	padding: 20px;
+	text-decoration: none;
+	background-color: #000;
+	cursor: pointer;
+}
+div.link_to_character:hover {
+	background-color: #333;
+}
+div.link_to_character > div.text {
+	width: 80%;
+	margin-left: 5%;
+	font-size: 1.2em;
+}
+div.link_to_character > img {
+	width: 200px;
+	height: 150px;
+	object-fit: cover;
+	object-position: 0% 0%;
+	border: 2px solid #222;
+	padding: 5px;
+}
+div.link_to_character.alice > img {
+	object-position: -15px 10px;
+}
+
+
 main > section > p {
 	text-indent: 1.25em;
 }
