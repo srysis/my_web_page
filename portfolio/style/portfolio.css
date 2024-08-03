@@ -1,0 +1,30 @@
+div.link_to_project {
+	display: flex;
+	margin: 1% 0;
+	border: 5px solid #222;
+	border-radius: 10px;
+	padding: 20px;
+	text-decoration: none;
+	background-color: #000;
+	cursor: pointer;
+}
+div.link_to_project:hover {
+	background-color: #333;
+}
+div.link_to_project > div.text {
+	margin-left: 2%;
+	font-size: 1.2em;
+}
+div.link_to_project > img {
+	width: 10%;
+	height: 15vh;
+	object-fit: cover;
+	object-position: 50% 10%;
+	border: 2px solid #222;
+	padding: 5px;
+}
+div.link_to_project::after {
+	content: "";
+	display: block;
+	clear: both;
+}
