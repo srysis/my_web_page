@@ -16,7 +16,7 @@ main {
 	background-color: rgba(16, 16, 20, 0.85);
 	margin: 1% 2%;
 	border: 3px solid #444;
-	border-radius: 15px;
+	border-radius: 5px;
 	padding: 2% 3%;
 }
 h3 {
@@ -123,38 +123,6 @@ q {
 main > p {
 	padding-left: 6px;
 	text-indent: 1.25em;
-}
-
-
-div.link_to_project {
-	margin-bottom: 2%;
-	border: 5px solid #222;
-	border-radius: 10px;
-	padding: 20px;
-	text-decoration: none;
-	background-color: #000;
-	cursor: pointer;
-}
-div.link_to_project:hover {
-	background-color: #333;
-}
-div.link_to_project > div.text {
-	margin-left: 12%;
-	font-size: 1.2em;
-}
-div.link_to_project > img {
-	float: left;
-	width: 150px;
-	height: 150px;
-	object-fit: cover;
-	object-position: 55%;
-	border: 2px solid #222;
-	padding: 5px;
-}
-div.link_to_project::after {
-	content: "";
-	display: block;
-	clear: both;
 }
 
 
