@@ -36,6 +36,28 @@ button {
 }
 
 
+#info {
+	position: fixed;
+	z-index: 4;
+	display: block;
+	width: 100%;
+	background-color: #fff;
+}
+#info > p {
+	text-align: center;
+	font-size: 1em;
+}
+#info > img {
+	position: absolute;
+	display: block;
+	top: 30%;
+	right: 1%;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+
 header {
 	color: white;
 	height: 90vh;

@@ -4,6 +4,13 @@
 	}
 
 
+	#info > p {
+		width: 80%;
+		margin: auto;
+		padding: 10px 0;
+	}
+
+
 	header {
 		height: 165vh;
 		margin-bottom: 10%;

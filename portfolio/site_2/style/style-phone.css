@@ -20,6 +20,15 @@
 	}
 	
 
+	#info > p {
+		width: 80%;
+		margin: auto;
+		padding: 10px 0;
+	}
+	#info > img {
+		top: 37%;
+	}
+
 
 	header {
 		background-position: 50% 0%;

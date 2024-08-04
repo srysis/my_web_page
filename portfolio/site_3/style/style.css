@@ -81,6 +81,29 @@ h2 > span {
 }
 
 
+#info {
+	position: fixed;
+	z-index: 4;
+	display: block;
+	width: 100%;
+	background-color: #fff;
+}
+#info > p {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 1.2em;
+}
+#info > img {
+	position: absolute;
+	display: block;
+	top: 25%;
+	right: 1%;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+
 #logo {
 	display: inline-block;
 	padding: 39.5px 60px;

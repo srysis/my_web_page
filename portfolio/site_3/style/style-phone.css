@@ -17,6 +17,15 @@
 	}
 
 
+	#info > p {
+		width: 80%;
+		margin: auto;
+	}
+	#info > img {
+		top: 37%;
+	}
+
+
 	header > .flex_container {
 		height: 100vh;
 	}
