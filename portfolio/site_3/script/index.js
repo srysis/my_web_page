@@ -15,6 +15,8 @@ let contact_form = document.querySelector("form");
 let contact_form_input_elements = document.querySelectorAll("input[type='text']");
 let contact_success_element = document.querySelector("div#contact_success");
 
+let info_block = document.querySelector("div#info");
+let cross_button = document.querySelector("div#info > img");
 
 function toggleAside() {
 	aside.classList.toggle("hidden");
@@ -103,3 +105,12 @@ for (let element of contact_form_input_elements) {
 		}
 	});
 }
+
+
+setTimeout(() => {
+	info_block.style.display = "block";
+}, 500);
+
+cross_button.addEventListener("click", function() {
+	info_block.remove();
+})
