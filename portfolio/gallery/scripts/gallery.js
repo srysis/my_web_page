@@ -141,12 +141,30 @@ function switchToPreviousImage() {
 	}
 }
 
+
+// These functions were made to avoid code duplicating and serve as event handlers for image switching
+function handleSwitchToNextImageEvent(event) {
+	if (event.type == "click" || (event.type == "keydown" && event.code == "ArrowRight")) {
+		switchToNextImage();
+	} 
+}
+
+function handleSwitchToPrevImageEvent(event) {
+	if (event.type == "click" || (event.type == "keydown" && event.code == "ArrowLeft")) {
+		switchToPreviousImage();
+	} 
+}
+// ---------------------------------------------------------------------------------------------------
+
 function addEventListenerToButtons() {
 	let prev_photo_button = document.querySelector("#prev_photo");
 	let next_photo_button = document.querySelector("#next_photo");	
 
-	prev_photo_button.addEventListener("click", switchToPreviousImage);
-	next_photo_button.addEventListener("click", switchToNextImage);
+	prev_photo_button.addEventListener("click", handleSwitchToPrevImageEvent);
+	next_photo_button.addEventListener("click", handleSwitchToNextImageEvent);
+
+	document.addEventListener("keydown", handleSwitchToPrevImageEvent);
+	document.addEventListener("keydown", handleSwitchToNextImageEvent);
 
 }
 
@@ -156,6 +174,9 @@ function removeEventListenersFromButtons() {
 
 	prev_photo_button.removeEventListener("click", switchToPreviousImage);
 	next_photo_button.removeEventListener("click", switchToNextImage);
+
+	document.removeEventListener("keydown", handleSwitchToPrevImageEvent);
+	document.removeEventListener("keydown", handleSwitchToNextImageEvent);
 }
 
 
