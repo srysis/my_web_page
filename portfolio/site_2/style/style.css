@@ -63,7 +63,7 @@ h2 {
 
 header {
 	color: white;
-	height: 105vh;
+	height: 1000px;
 	background-image: url("../files/header/background.png");
 	background-size: cover;
 }
@@ -197,7 +197,7 @@ aside {
 	background-position: 40% 0;
 	background-repeat: no-repeat;
 	width: 90%;
-	height: 90vh;
+	height: 850px;
 	margin: 2% auto;
 	border-radius: 200px;
 	position: relative;
@@ -220,7 +220,7 @@ aside {
 	text-align: center;
 }
 #protection_methods > .flex_container > div > div.content {
-	height: 50vh;
+	height: 400px;
 	border-radius: 15px;
 	padding: 5% 4%;
 	padding-top: 15%;
