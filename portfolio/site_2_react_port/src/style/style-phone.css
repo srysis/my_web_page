@@ -1,0 +1,354 @@
+@media screen and (max-width: 550px) {
+	body {
+		background-image: url("../files/body_background.png");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	button.more, button#about_button {
+		padding: 10%;
+	}
+	button.more.blue {
+		padding: 5% 10%;
+	}
+	section {
+		background-color: #fff;
+		position: relative;
+	}
+	h2 {
+		font-size: 2.2em;
+	}
+	
+
+
+	header {
+		background-position: 50% 0%;
+		position: relative;
+		z-index: 2;
+		height: 100vh;
+	}
+	button#sidebar_menu {
+		display: block;
+		position: absolute;
+		left: 5%;
+		top: 3%;
+		z-index: 3;
+		border: none;
+		background-color: transparent;
+	}
+	button#sidebar_menu > img {
+		filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(65deg) brightness(105%) contrast(101%);
+		width: 36px;
+	}
+	#header_nav {
+		display: none;
+	}
+	#header_title {
+		top: 33%;
+		left: 6%;
+	}
+	#header_title > h1 {
+		font-size: 3.2em;
+		line-height: 1;
+		margin-block-start: 0;
+		margin-block-end: 0;
+	}
+	#header_title > .flex_container {
+		flex-direction: column;
+		width: 60%;
+	}
+	button#about_button {
+		margin: 0;
+		margin-top: 10%;
+	}
+
+
+	aside {
+		display: block;
+		position: fixed;
+		z-index: 3;
+		top: 0;
+		width: 100%;
+		height: 105vh;
+	}
+	aside.hidden {
+		display: none;
+	}
+	aside.visible {
+		display: block;
+	}
+	aside > .overlay {
+		background-color: #000;
+		opacity: 0.5;
+	}
+	#aside_content {
+		position: relative;
+		z-index: 2;
+		width: 75%;
+		height: 100%;
+		padding: 10% 4%;
+		background-color: #000;
+	}
+	#aside_content.hidden {
+		left: -9999px;
+	}
+	#aside_content.visible {
+		left: 0;
+	}
+	#search_field {
+		border: none;
+		border-bottom: 3px solid #aaa;
+		padding: 4%;
+		background-color: transparent;
+		color: #fff;
+	}
+	#search_field:focus {
+		outline: none;
+		background-color: #222;
+	}
+	::placeholder {
+		color: #aaa;
+	}
+	#search_button {
+		border: none;
+		padding: 5%;
+		background-color: transparent;
+	}
+	#search_button > img {
+		filter: invert(100%) sepia(63%) saturate(0%) hue-rotate(65deg) brightness(105%) contrast(101%);
+		width: 16px;
+	}
+	button#login {
+		margin-top: 12%;
+		border: none;
+		padding: 4% 16%;
+		background-color: #fff;
+		color: #000;
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+	#aside_content > ul {
+		margin-block-start: 2em;
+		margin-block-end: 2em;
+		padding-inline-start: 0;
+		list-style: none;
+	}
+	#aside_content > ul > li {
+		padding: 6% 0;
+		font-size: 1.4em;
+	}
+	#aside_content > ul > li > a {
+		color: #fff;
+		text-decoration: none;
+	}
+	#aside_content > ul > li > a:before {
+		content: "→";
+		padding-right: 10px;
+	}
+
+
+	#about_corona {
+		position: relative;
+		top: 0;
+		width: 100%;
+		margin-bottom: 10px;
+		border-radius: 0px;
+		padding: 6% 30px;
+		padding-top: 10%;
+		box-shadow: none;
+	}
+	.text_and_button > h3 {
+		margin-block-start: 0;
+		margin-block-end: 0.2em;
+		font-size: 2em;
+	}
+	.text_and_button > hr {
+		width: 50%;
+		margin: 0;
+		border-top: 7px solid #ed242e;
+		border-radius: 10px;
+	}
+	.text_and_button > p {
+		margin-block-start: 2.5em;
+		margin-block-end: 1.5em;
+	}
+	.text_and_button > button.more.blue {
+		position: relative;
+		z-index: 2;
+	}
+	#about_corona > .flex_container > .image {
+		display: none;
+	}
+
+
+	#symptoms {
+		width: 100%;
+		margin-bottom: 10px;
+		padding: 6% 30px;
+	}
+	#symptoms > .flex_container > .image {
+		display: none;
+	}
+	#symptoms > .flex_container > .text_and_button > h2 {
+		width: 80%;
+	}
+
+
+	#protection {
+		margin-bottom: 10px;
+	}
+	#protection_title {
+		padding-top: 15px;
+	}
+	#protection_title > h2 {
+		line-height: 1;
+	}
+	#protection_methods {
+		width: 100%;
+		height: 101vh;
+		border-radius: 0px;
+		background-image: none;
+		background-size: contain;
+	}
+	#protection_methods:before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		background-image: url("../files/protect.png");
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-size: cover;
+	}
+	#protection_methods > .overlay {
+		border-radius: 0;
+	}
+	#protection_methods > .flex_container {
+		flex-direction: column;
+		width: 95%;
+		padding: 5% 0;
+	}
+	#protection_methods > .flex_container > div {
+		margin: 0;
+		text-align: center;
+		font-size: 0.85em;
+	}
+	#protection_methods > .flex_container > div > div.content {
+		height: auto;
+		border-radius: 0;
+		padding: 0 1%;
+	}
+	div.content > .flex_container {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.flex_container > .text_container {
+		width: 70%;
+		padding: 2% 0;
+	}
+	.text_container > button.more.red, .text_container > button.more.blue {
+		padding: 5% 7%;
+		display: block;
+		margin: auto;
+	}
+	br + button.more {
+		display: none;
+	}
+
+
+	#cases {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#cases > h2 {
+		padding-top: 25px;
+	}
+	#cases > p {
+		width: 100%;
+		padding: 2%;
+	}
+	#cases > .flex_container {
+		flex-direction: column;
+	}
+	#case_1, #case_2, #case_3 {
+		width: 95%;
+		margin: auto;
+		margin-top: 5%;
+		border: 3px solid black;
+		box-shadow: none;
+	}
+	#case_3 {
+		padding-bottom: 0;
+	}
+	.image_and_button + .text_and_button {
+		margin-top: 0;
+	}
+	.image_and_button > button {
+		display: none;
+	}
+
+
+	#doctors {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	#doctors > h2 {
+		padding-top: 25px;
+		padding-bottom: 0;
+		text-align: center;
+	}
+	#doctors > .flex_container {
+		flex-direction: column;
+	}
+	.doctor {
+		height: auto;
+		background-color: #fff;
+		border: 3px solid black;
+		box-shadow: none;
+	}
+	.doctor > .content {
+		position: static;
+	}
+	.doctor > .content:after {
+		display: none;
+	}
+
+
+	#keep_updated > h2 {
+		padding-top: 25px;
+	}
+	#keep_updated > #form_container {
+		position: relative; /* this is required to put the form above the body's background, so user can use the form as intended */
+	}
+	#input_container > #error_tooltip {
+		left: 12%;
+		width: 300px;
+	}
+	div#subscription_success > h3 {
+		text-align: center;
+		font-size: 2.5em;
+	}
+
+
+	footer > .flex_container {
+		flex-direction: column;
+	}
+	#resources > p > a {
+		text-decoration: underline;
+		text-decoration-color: white;
+		text-decoration-thickness: 2px;
+	}
+	#about {
+		width: 100%;
+	}
+	#countries > img {
+		width: 70vw;
+	}
+}
