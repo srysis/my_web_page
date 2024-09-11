@@ -13,7 +13,7 @@ document.querySelector("div.link_to_project.three").addEventListener('click', fu
 });
 
 document.querySelector("div.link_to_project.four").addEventListener('click', function() {
-	window.location.href = "site_2/index.html";
+	window.location.href = "site_2_react_port/build/index.html";
 });
 
 document.querySelector("div.link_to_project.five").addEventListener('click', function() {
