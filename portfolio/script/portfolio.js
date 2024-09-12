@@ -9,7 +9,7 @@ document.querySelector("div.link_to_project.two").addEventListener('click', func
 });
 
 document.querySelector("div.link_to_project.three").addEventListener('click', function() {
-	window.location.href = "site_1/index.html";
+	window.location.href = "site_1_react_port/build/index.html";
 });
 
 document.querySelector("div.link_to_project.four").addEventListener('click', function() {
