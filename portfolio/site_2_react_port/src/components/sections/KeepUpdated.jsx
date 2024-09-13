@@ -1,7 +1,6 @@
 import React from "react"
 
 import KeepUpdatedForm from "./form_components/KeepUpdatedForm"
-import FormElement from "./form_components/FormElement"
 
 function KeepUpdated() {
 	const [isSent, toggleSentState] = React.useState(false);
