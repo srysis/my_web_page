@@ -17,5 +17,5 @@ document.querySelector("div.link_to_project.four").addEventListener('click', fun
 });
 
 document.querySelector("div.link_to_project.five").addEventListener('click', function() {
-	window.location.href = "site_3/index.html";
+	window.location.href = "site_3_react_port/build/index.html";
 });
