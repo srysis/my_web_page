@@ -9,13 +9,13 @@ document.querySelector("div.link_to_project.two").addEventListener('click', func
 });
 
 document.querySelector("div.link_to_project.three").addEventListener('click', function() {
-	window.location.href = "site_1_react_port/build/index.html";
+	window.location.href = "site_1/index.html";
 });
 
 document.querySelector("div.link_to_project.four").addEventListener('click', function() {
-	window.location.href = "site_2_react_port/build/index.html";
+	window.location.href = "site_2/index.html";
 });
 
 document.querySelector("div.link_to_project.five").addEventListener('click', function() {
-	window.location.href = "site_3_react_port/build/index.html";
+	window.location.href = "site_3/index.html";
 });
