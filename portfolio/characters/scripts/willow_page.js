@@ -1,7 +1,9 @@
 "use strict";
 
 let willow_skins_container = document.querySelector("div#willow_skins");
-let image_container = document.querySelector("div#image_container");
+
+let image_fullscreen_container = document.querySelector("div#image_fullscreen_overlay_container");
+let close_image_fullscreen_container_button = document.querySelector("#close_button");
 
 let clientWidth = document.documentElement.clientWidth;
 
@@ -11,20 +13,17 @@ if (willow_skins_container != null) {
 		displayImageInFullscreen(true);
 	});
 }
-if (image_container != null) {
-	image_container.addEventListener('click', function() {
-		if (event.target.tagName == 'DIV') displayImageInFullscreen(false);
-	});
-}
 
 function displayImageInFullscreen(option) {
 	if (option == true) {
-		image_container.style.display = "block";
-		let img_tag = document.createElement("img");
-		img_tag.setAttribute("src", event.target.getAttribute("src"));
-		img_tag.classList.add("image_fullscreen");
-		img_tag.classList.add("willow");
-		image_container.append(img_tag);
+		image_fullscreen_container.classList.toggle("inactive");
+		image_fullscreen_container.classList.toggle("active");
+
+		let image_element = document.querySelector("img.image_fullscreen");
+		image_element.setAttribute("src", event.target.getAttribute("src"));
+		image_element.classList.add("image_fullscreen");
+		image_element.classList.add("willow");
+		image_fullscreen_container.append(image_element);
 		
 		document.body.style.overflow = "hidden";
 
@@ -33,9 +32,11 @@ function displayImageInFullscreen(option) {
 		}
 
 	} else if (option == false) {
-		image_container.style.display = "none";
-		let img_tag = document.querySelector("img.image_fullscreen");
-		img_tag.remove();
+		image_fullscreen_container.classList.toggle("inactive");
+		image_fullscreen_container.classList.toggle("active");
+
+		let image_element = document.querySelector("img.image_fullscreen");
+		image_element.setAttribute("src", " ");
 
 		document.body.style.overflow = "visible";
 
@@ -45,3 +46,9 @@ function displayImageInFullscreen(option) {
 
 	}
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+	close_image_fullscreen_container_button.addEventListener("click", function() {
+		displayImageInFullscreen(false);
+	});
+})
