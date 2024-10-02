@@ -35,10 +35,14 @@ function toggleAsideMenu() {
 
 sidebar_activation_button.addEventListener('click', function() {
 	toggleAsideMenu();
+	document.body.style.overflow = 'hidden'; // disallow scrolling when the sidebar menu is active and user attempts to scroll inside of it
 });
 
 aside.addEventListener('touchstart', function() {
-	if ((event.target.tagName == 'DIV') && (event.target.classList.contains("overlay"))) toggleAsideMenu();
+	if ((event.target.tagName == 'DIV') && (event.target.classList.contains("overlay"))) { 
+		toggleAsideMenu();
+		document.body.style.overflow = 'visible'; // return normal scrolling functionality when sidebar menu is inactive
+	}
 });
 
 aside.addEventListener('click', function() {
