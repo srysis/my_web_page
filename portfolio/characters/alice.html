@@ -8,6 +8,7 @@
 	<link media="screen" rel="stylesheet" href="style/characters.css">
 	<link media="screen" rel="stylesheet" href="style/characters-phone.css">
 	<link rel="preload" href="files/Alice.gif" as="image" type="image/gif">
+	<script src="../../script/main.js" defer></script>
 	<script src="scripts/alice_page.js" defer></script>
 	<title>Alice Liddell</title>
 </head>
@@ -20,6 +21,16 @@
 		</nav>
 	</header>
 	<hr class="header_hr">
+	<aside>
+		<button id="sidebar_toggle" class="inactive"><img src="../../files/bars-solid.svg"></button>
+		<div class="overlay hidden"></div>
+		<div id="aside_content" class="hidden">
+			<ul>
+				<li><a href="../portfolio.html">Portfolio</a><hr></li>
+				<li><a href="../../about_me.html">About me</a><hr></li>
+			</ul>
+		</div>
+	</aside>
 	<main>
 		<h2 id="char_name">Alice Liddell</h2>
 		<section class="bio">
