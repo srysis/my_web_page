@@ -474,7 +474,6 @@ input[type="submit"] {
 	top: 4%;
 	width: 250px;
 	padding: 10px 0;
-	border-radius: 4px;
 	background-color: #E85C5C;
 	color: #000;
 	text-align: center;
@@ -491,17 +490,17 @@ input[type="submit"] {
 	content: "";
 	position: absolute;
 	margin-left: -15px;
-	border-width: 24px;
+	border-width: 23px;
 	border-style: solid;
 }
 .error_tooltip.first::after {
-	left: 105%;
+	left: 106%;
 	top: 0%;
 	border-color: transparent transparent transparent #E85C5C;
 }
 .error_tooltip.second::after {
-	left: -13%;
-	top: -1%;
+	left: -12.7%;
+	top: 0%;
 	border-color: transparent #E85C5C transparent transparent;
 }
 #contact_success {
