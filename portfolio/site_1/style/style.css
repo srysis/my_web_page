@@ -491,17 +491,17 @@ input[type="submit"] {
 	content: "";
 	position: absolute;
 	margin-left: -15px;
-	border-width: 20px;
+	border-width: 24px;
 	border-style: solid;
 }
 .error_tooltip.first::after {
 	left: 105%;
-	top: 3%;
+	top: 0%;
 	border-color: transparent transparent transparent #E85C5C;
 }
 .error_tooltip.second::after {
-	left: -9.5%;
-	top: 2%;
+	left: -13%;
+	top: -1%;
 	border-color: transparent #E85C5C transparent transparent;
 }
 #contact_success {
