@@ -98,7 +98,7 @@ function displayImageInFullscreen(option, image_source = undefined) {
 			document.body.style.marginRight = 0.4 + "%";   // add a small amount of margin to prevent "jumping" layout
 		}
 
-		addEventListenerToButtons();
+		addEventListenersToButtons();
 
 	} else {
 		image_fullscreen_container.classList.toggle("inactive");
@@ -122,7 +122,7 @@ function switchToNextImage() {
 
 	if (current_photo.parentElement.nextElementSibling != null) {
 		current_photo.classList.toggle("current_photo");
-		current_photo.parentElement.nextElementSibling.firstElementChild.classList.toggle("current_photo"); 	// don't ask.
+		current_photo.parentElement.nextElementSibling.firstElementChild.classList.toggle("current_photo");
 
 		let image_container = document.querySelector("img.image_fullscreen");
 		image_container.setAttribute("src", document.querySelector("img.current_photo").getAttribute("src"));
@@ -156,7 +156,7 @@ function handleSwitchToPrevImageEvent(event) {
 }
 // ---------------------------------------------------------------------------------------------------
 
-function addEventListenerToButtons() {
+function addEventListenersToButtons() {
 	let prev_photo_button = document.querySelector("#prev_photo");
 	let next_photo_button = document.querySelector("#next_photo");	
 
