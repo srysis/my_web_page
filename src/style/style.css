@@ -85,6 +85,7 @@ header {
 }
 
 main {
+	min-height: 74vh;
 	padding: 2vh 1vw;
 	background-color: rgba(0, 0, 0, 0.85);
 }
@@ -328,7 +329,7 @@ footer {
 	}
 
 	div#copyright {
-		padding: 3vh 0;
+		padding: 3vh 5vw;
 		text-align: center;
 		font-style: italic;
 		color: #666;
