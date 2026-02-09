@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Footer from "../components/Footer.jsx"
+
 import useTitle from "../components/hooks/useTitle.jsx"
 
 import characters_image from "../files/portfolio/characters.png"
@@ -174,6 +176,7 @@ function Portfolio() {
 					</div>
 				</div>
 			</main>
+			<Footer></Footer>
 		</>
 	)
 }
