@@ -14,16 +14,13 @@ function Footer() {
 						<span className="git"><a href="https://github.com/srysis" target="_blank">GitHub</a></span>
 					</div>
 					<div>
-						<span><a href="https://www.linkedin.com/in/denys-yarymovych-226823327/" target="_blank">LinkedIn</a></span>
-					</div>
-					<div>
 						<span><em>denys.yarymovych@gmail.com</em></span>
 					</div>
 				</div>
 			</div>
 			<hr />
 			<div id="copyright">
-				<p>All available materials are used for educational purposes only. If you have any problems, please contact me.</p>
+				<p>All materials and assets are used for educational purposes only. If you have any problems, please contact me.</p>
 			</div>
 		</footer>
 	) 
