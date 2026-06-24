@@ -118,6 +118,8 @@ section#portfolio {
 		div.project {
 			width: 98%;
 			margin: 4vh auto;
+			padding: 1vh 1vw;
+			padding-top: 2vh;
 			position: relative;
 			display: flex;
 			align-items: center;
@@ -152,7 +154,7 @@ section#portfolio {
 				}
 
 				p {
-					margin-block: 5px;
+					margin-block: 3px;
 				}
 
 				div > span {
