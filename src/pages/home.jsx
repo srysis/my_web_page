@@ -4,9 +4,8 @@ import Intro from "../components/Intro.jsx"
 import AboutMe from "../components/AboutMe.jsx"
 import MajorSkills from "../components/MajorSkills.jsx"
 import MinorSkills from "../components/MinorSkills.jsx"
-
 import Portfolio from "../components/PortfolioSection.jsx"
-import Hiring from "../components/Hire.jsx"
+import Resume from "../components/Resume.jsx"
 
 function Home() {
 	return (
@@ -19,6 +18,7 @@ function Home() {
 					<MinorSkills />
 				</section>
 				<Portfolio />
+				<Resume />
 			</main>
 			<Footer />
 		</>
