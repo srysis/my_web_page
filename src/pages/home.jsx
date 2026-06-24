@@ -7,9 +7,12 @@ import MinorSkills from "../components/MinorSkills.jsx"
 import Portfolio from "../components/PortfolioSection.jsx"
 import Resume from "../components/Resume.jsx"
 
+import LocaleSwitcher from "../components/LocaleSwitcher.jsx"
+
 function Home() {
 	return (
 		<>
+			<LocaleSwitcher />
 			<Intro />
 			<main>
 				<section id="info_and_skills">
