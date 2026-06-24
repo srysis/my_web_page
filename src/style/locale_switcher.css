@@ -1,0 +1,56 @@
+div.locale_switcher {
+	display: flex;
+	align-items: center;
+
+	select, ::picker(select) {
+		appearance: base-select;
+	}
+
+	::picker(select) {
+		box-shadow: 0 4px 8px #777;
+	}
+
+	select#lang_switch {
+        position: fixed;
+        top: 0;
+        right: 0;
+		display: block;
+		border: none;
+		border-radius: 5px;
+		padding: 5px .8vw;
+		color: #fff;
+		font-size: 2em;
+		background-color: #000;
+		cursor: pointer;
+
+		option {
+			display: block;
+			border: 1px solid #000;
+			padding-block: 5px;
+			text-align: center;
+			color: #fff;
+		}
+
+		option::checkmark {
+			display: none;
+		}
+	}
+
+	select#lang_switch::picker-icon {
+		margin-top: .1em;
+		color: #fff;
+		font-size: .9em;
+	}
+
+	select#lang_switch:open::picker-icon {
+		rotate: 180deg;
+	}
+
+	select#lang_switch:hover {
+		background-color: #222;
+	}
+
+	::picker(select) {
+		border: none;
+	}
+}
