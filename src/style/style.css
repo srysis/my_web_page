@@ -81,6 +81,10 @@ section#info_and_skills {
 	justify-content: space-between;
 
 	div {
+		hr {
+			width: 93%;
+		}
+
 		ul {
 			padding: 2vh 3vw;
 			font-size: 1.4em;
