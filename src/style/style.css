@@ -55,28 +55,32 @@ section#intro {
 	}
 }
 
+section#info_and_skills, section#portfolio, section#resume {
+	hr, div > hr {
+		width: 98%;
+		margin: auto;
+		border: 2px solid #666;
+	}
+
+	h2, div > h2 {
+		margin-top: 2vh;
+		font-size: 2.6em;
+		text-align: center;
+	}
+}
+
+section#info_and_skills > div, section#portfolio, section#resume {
+	margin-top: 3vh;
+	border: 3px solid #333;
+	border-radius: 4px;
+	background-color: rgba(16, 16, 20, 1);
+}
+
 section#info_and_skills {
 	display: flex;
 	justify-content: space-between;
 
 	div {
-		margin-top: 3vh;
-		border: 3px solid #333;
-		border-radius: 4px;
-		background-color: rgba(16, 16, 20, 1);
-
-		h2 {
-			margin-top: 2vh;
-			font-size: 2.6em;
-			text-align: center;
-		}
-
-		hr {
-			width: 90%;
-			margin: auto;
-			border: 2px solid #666;
-		}
-
 		ul {
 			padding: 2vh 3vw;
 			font-size: 1.4em;
@@ -97,23 +101,6 @@ section#info_and_skills {
 }
 
 section#portfolio {
-	margin-top: 3vh;
-	border: 3px solid #333;
-	border-radius: 4px;
-	background-color: rgba(16, 16, 20, 1);
-
-	h2 {
-		margin-top: 2vh;
-		font-size: 2.6em;
-		text-align: center;
-	}
-
-	hr {
-		width: 98%;
-		margin: auto;
-		border: 2px solid #666;
-	}
-
 	div#list {
 		div.project {
 			width: 98%;
@@ -178,23 +165,6 @@ section#portfolio {
 }
 
 section#resume {
-	margin-top: 3vh;
-	border: 3px solid #333;
-	border-radius: 4px;
-	background-color: rgba(16, 16, 20, 1);
-
-	h2 {
-		margin-top: 2vh;
-		font-size: 2.6em;
-		text-align: center;
-	}
-
-	hr {
-		width: 98%;
-		margin: auto;
-		border: 2px solid #666;
-	}
-
 	p {
 		margin-block: 1.2vh;
 		font-size: 1.6em;
