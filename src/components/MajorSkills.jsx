@@ -1,9 +1,11 @@
+import { useTranslation } from "react-i18next"
 
+function MajorSkills() {
+	const { t } = useTranslation();
 
-function MajorSkills( ) {
 	return (
 		<div id="major_skills">
-			<h2>Major skills</h2>
+			<h2>{t('major_skills_title')}</h2>
 			<hr />
 			<ul>
 				<li>HTML, CSS</li>

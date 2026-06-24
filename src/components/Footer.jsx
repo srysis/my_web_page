@@ -1,12 +1,16 @@
+import { useTranslation } from "react-i18next"
+
 import github_icon from "../files/github-mark-white.svg"
 
 function Footer() {
+	const { t } = useTranslation();
+
 	return (
 		<footer>
 			<div className="flex_container">
 				<div className="left">
 					<div>
-						<img src={github_icon} /><span><a href="https://github.com/srysis/my_web_page_react" target="_blank">Source code</a></span>
+						<img src={github_icon} /><span><a href="https://github.com/srysis/my_web_page_react" target="_blank">{t('footer.source_code')}</a></span>
 					</div>
 				</div>
 				<div className="right">
@@ -20,7 +24,7 @@ function Footer() {
 			</div>
 			<hr />
 			<div id="copyright">
-				<p>All materials and assets are used for educational purposes only. If you have any problems, please contact me.</p>
+				<p>{t('footer.copyright')}</p>
 			</div>
 		</footer>
 	) 

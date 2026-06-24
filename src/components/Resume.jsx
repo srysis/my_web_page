@@ -1,14 +1,17 @@
+import { useTranslation } from "react-i18next"
+
 import resume_en from "../files/cv/resume_en.jpg"
 import resume_cz from "../files/cv/resume_cz.jpg"
 import resume_ua from "../files/cv/resume_ua.jpg"
 
 function Resume() {
+	const { t } = useTranslation();
 
 	return (
 		<section id="resume">
-			<h2>Resume</h2>
+			<h2>{t('resume.title')}</h2>
 			<hr />
-			<p>Available in three languages:</p>
+			<p>{t('resume.desc')}</p>
 			<div id="resumes">
 				<div className="resume en">
 					<div className="overlay">
@@ -17,7 +20,7 @@ function Resume() {
 					<div className="preview">
 						<img src={resume_en} alt="CV in English"/>
 					</div>
-					<p>English</p>
+					<p>{t('resume.en')}</p>
 				</div>
 				<div className="resume cz">
 					<div className="overlay">
@@ -26,7 +29,7 @@ function Resume() {
 					<div className="preview">
 						<img src={resume_cz} alt="CV in Czech"/>
 					</div>
-					<p>Čeština (Czech)</p>
+					<p>{t('resume.cz')}</p>
 				</div>
 				<div className="resume ua">
 					<div className="overlay">
@@ -35,7 +38,7 @@ function Resume() {
 					<div className="preview">
 						<img src={resume_ua} alt="CV in Ukrainian"/>
 					</div>
-					<p>Українська (Ukrainian)</p>
+					<p>{t('resume.ua')}</p>
 				</div>
 			</div>
 		</section>

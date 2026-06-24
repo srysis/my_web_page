@@ -1,11 +1,15 @@
+import { useTranslation } from "react-i18next"
+
 import game_shop_image from "../files/portfolio/game_shop.png"
 import forum_image from "../files/portfolio/forum.png"
 import cookbook_image from "../files/portfolio/cookbook.png"
 
 function PortfolioSection( ) {
+	const { t } = useTranslation();
+
 	return (
 		<section id="portfolio">
-			<h2>Portfolio</h2>
+			<h2>{t('portfolio.title')}</h2>
 			<hr />
 			<div id="list">
 				<div className="project">
@@ -17,7 +21,7 @@ function PortfolioSection( ) {
 					</div>
 					<div className="info">
 						<h3>Game Shop</h3>
-						<p>A 'proof-of-concept' online shop.</p>
+						<p>{t('portfolio.game_shop.desc')}</p>
 						<div>
 							<span>React.js</span>
 							<span>Node.js</span>
@@ -35,7 +39,7 @@ function PortfolioSection( ) {
 					</div>
 					<div className="info">
 						<h3>Forum</h3>
-						<p>A full-stack forum web-application. Discuss anything or share your pictures!</p>
+						<p>{t('portfolio.forum.desc')}</p>
 						<div>
 							<span>React.js</span>
 							<span>Node.js</span>
@@ -54,7 +58,7 @@ function PortfolioSection( ) {
 					</div>
 					<div className="info">
 						<h3>Cookbook</h3>
-						<p>A personal 'recipe book' website. Create your recipes and search through them to find a specific recipe.</p>
+						<p>{t('portfolio.cookbook.desc')}</p>
 						<div>
 							<span>React.js</span>
 							<span>i18n</span>

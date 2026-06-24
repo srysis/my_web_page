@@ -1,16 +1,18 @@
-import { useEffect } from 'react'
+import { useTranslation } from "react-i18next"
 
 function AboutMe() {
+	const { t } = useTranslation();
+
 	return (
 		<div id="about_me">
-			<h2>Technical information</h2>
+			<h2>{t('short_info.title')}</h2>
 			<hr />
 			<ul>
-				<li>Name Surname: Denys Yarymovych</li>
-				<li>Nickname: srysis</li>
-				<li>Age: 24</li>
-				<li>Nationality: Ukrainian</li>
-				<li>Highest level of education: Bachelor's degree in 'Information Technologies'</li>
+				<li>{t('short_info.name_surname.title')}: {t('short_info.name_surname.content')}</li>
+				<li>{t('short_info.nickname_title')}: srysis</li>
+				<li>{t('short_info.age_title')}: 24</li>
+				<li>{t('short_info.nationality.title')}: {t('short_info.nationality.content')}</li>
+				<li>{t('short_info.education.title')}: {t('short_info.education.content')}</li>
 			</ul>
 		</div>
 	)
