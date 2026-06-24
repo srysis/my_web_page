@@ -1,0 +1,45 @@
+{
+    "short_desc": "Webový vývojář s přibližně 2 lety zkušeností získaných samostudiem a téměř 1 rokem praxe v komerční sféře. Zaměřuji se především na vytváření přehledného, jednoduchého a plynulého uživatelského rozhraní pro jakoukoli webovou stránku či webovou aplikaci.",
+    "short_info": {
+        "title": "Kratka informace",
+        "name_surname": {
+            "title": "Jméno Příjmení",
+            "content": "Denys Jarymovyč"
+        },
+        "nickname_title": "Nickname",
+        "age_title": "Věk",
+        "nationality": {
+            "title": "Státní příslušnost",
+            "content": "Ukrajinec"
+        },
+        "education": {
+            "title": "Nejvyšší stupeň",
+            "content": "Bakalářský titul v oboru „Informační technologie“"
+        }
+    },
+    "major_skills_title": "Klíčové dovednosti",
+    "minor_skills_title": "Drobné dovednosti",
+    "portfolio": {
+        "title": "Portfolio",
+        "game_shop": {
+            "desc": "„Proof-of-concept“ internetového obchodu."
+        },
+        "forum": {
+            "desc": "Full-stack aplikace pro fórum. Diskutujte o čemkoli nebo sdílejte své fotky!"
+        },
+        "cookbook": {
+            "desc": "Webová stránka jako osobní „kuchařka“. Vytvářejte své recepty a prohledávejte je, abyste našli konkrétní recept."
+        }
+    },
+    "resume": {
+        "title": "Životopis",
+        "desc": "Ve třech jazycích:",
+        "en": "Angličtina",
+        "cz": "Čeština",
+        "ua": "Ukrajinština"
+    },
+    "footer": {
+        "source_code": "Zdrojový kód",
+        "copyright": "Všechny materiály a zdroje slouží výhradně k vzdělávacím účelům. V případě jakýchkoli potíží mě prosím kontaktujte."
+    }
+}
