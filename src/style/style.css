@@ -175,6 +175,80 @@ section#portfolio {
 	}
 }
 
+section#resume {
+	margin-top: 3vh;
+	border: 3px solid #333;
+	border-radius: 4px;
+	background-color: rgba(16, 16, 20, 1);
+
+	h2 {
+		margin-top: 2vh;
+		font-size: 2.6em;
+		text-align: center;
+	}
+
+	hr {
+		width: 98%;
+		margin: auto;
+		border: 2px solid #666;
+	}
+
+	p {
+		margin-block: 2vh;
+		font-size: 1.6em;
+		text-align: center;
+	}
+
+	div#resumes {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 0 2vw;
+		padding-bottom: 2vh;
+
+		div.resume {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			padding-block: 2vh;
+			cursor: pointer;
+
+			div.overlay > a {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 2;
+			}
+			
+			div.preview {
+				width: 70%;
+				margin: auto;
+
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			p {
+				margin: 0;
+				margin-top: 1vh;
+			}
+		}
+		
+		div.resume:hover {
+			background-color: #444;
+		}
+
+		div.resume:active {
+			background-color: #333;
+		}
+	}
+
+	
+}
+
 footer {
 	background-color: rgba(0, 0, 0, 1);
 	color: #ddd;
