@@ -58,6 +58,10 @@
 					width: 90%;
 				}
 
+				div.preview_image {
+					margin-right: 0;
+				}
+
 				div.info {
 					margin-top: 8px;
 					text-align: center;
