@@ -1,25 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.8c997f83.css",
-    "main.js": "./static/js/main.6c28561a.js",
+    "main.css": "./static/css/main.613e05f1.css",
+    "main.js": "./static/js/main.d8404e14.js",
     "static/media/background-2.jpg": "./static/media/background-2.80247c86718607b7995e.jpg",
-    "static/media/gallery.png": "./static/media/gallery.b16c787b2138ef27dc25.png",
-    "static/media/characters.png": "./static/media/characters.28f0518186ab9a111bd3.png",
-    "static/media/car_game.png": "./static/media/car_game.88f5ce10e2c37364c479.png",
-    "static/media/corona.png": "./static/media/corona.e56a28e29846321a58ee.png",
-    "static/media/marry_house.png": "./static/media/marry_house.2216626490f94f5a1ecd.png",
+    "static/media/resume_cz.jpg": "./static/media/resume_cz.06f07b0a35d812571c61.jpg",
+    "static/media/resume_en.jpg": "./static/media/resume_en.5e07bb77423b8312e926.jpg",
+    "static/media/resume_ua.jpg": "./static/media/resume_ua.129ccc8c81419838a17e.jpg",
     "static/media/forum.png": "./static/media/forum.97b9a4c42f5f6ca66557.png",
     "static/media/cookbook.png": "./static/media/cookbook.336c168cedda6d10f491.png",
     "static/media/game_shop.png": "./static/media/game_shop.543d98b713ded1456cba.png",
-    "static/media/dart.png": "./static/media/dart.52da9b11ecfe7a7fe803.png",
-    "static/media/json_editor.png": "./static/media/json_editor.f9a766e739e239047a4a.png",
     "static/media/github-mark-white.svg": "./static/media/github-mark-white.97ed8e7eef60d61ca469881dd6f34511.svg",
     "index.html": "./index.html",
-    "main.8c997f83.css.map": "./static/css/main.8c997f83.css.map",
-    "main.6c28561a.js.map": "./static/js/main.6c28561a.js.map"
+    "main.613e05f1.css.map": "./static/css/main.613e05f1.css.map",
+    "main.d8404e14.js.map": "./static/js/main.d8404e14.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c997f83.css",
-    "static/js/main.6c28561a.js"
+    "static/css/main.613e05f1.css",
+    "static/js/main.d8404e14.js"
   ]
 }

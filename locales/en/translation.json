@@ -1,0 +1,45 @@
+{
+    "short_desc": "Web-developer with roughly 2 years of self-taught experience and almost 1 year of commercial experience. My main focus is to provide clean, simplistic and smooth UI for any web-page/web-application.",
+    "short_info": {
+        "title": "Short info",
+        "name_surname": {
+            "title": "Name Surname",
+            "content": "Denys Yarymovych"
+        },
+        "nickname_title": "Nickname",
+        "age_title": "Age",
+        "nationality": {
+            "title": "Nationality",
+            "content": "Ukrainian"
+        },
+        "education": {
+            "title": "Highest degree",
+            "content": "Bachelor's degree in 'Information Technologies'"
+        }
+    },
+    "major_skills_title": "Major skills",
+    "minor_skills_title": "Minor skills",
+    "portfolio": {
+        "title": "Portfolio",
+        "game_shop": {
+            "desc": "A 'proof-of-concept' online shop."
+        },
+        "forum": {
+            "desc": "A full-stack forum web-application. Discuss anything or share your pictures!"
+        },
+        "cookbook": {
+            "desc": "A personal 'recipe book' website. Create your recipes and search through them to find a specific recipe."
+        }
+    },
+    "resume": {
+        "title": "Resume",
+        "desc": "Available in three languages:",
+        "en": "English",
+        "cz": "Czech",
+        "ua": "Ukrainian"
+    },
+    "footer": {
+        "source_code": "Source code",
+        "copyright": "All materials and assets are used for educational purposes only. If you have any problems, please contact me."
+    }
+}
