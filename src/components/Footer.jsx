@@ -10,12 +10,12 @@ function Footer() {
 			<div className="flex_container">
 				<div className="left">
 					<div>
-						<img src={github_icon} /><span><a href="https://github.com/srysis/my_web_page_react" target="_blank">{t('footer.source_code')}</a></span>
+						<img src={github_icon} alt="GitHub icon"/><span><a href="https://github.com/srysis/my_web_page_react" target="_blank" rel="noreferrer">{t('footer.source_code')}</a></span>
 					</div>
 				</div>
 				<div className="right">
 					<div>
-						<span className="git"><a href="https://github.com/srysis" target="_blank">GitHub</a></span>
+						<span className="git"><a href="https://github.com/srysis" target="_blank" rel="noreferrer">GitHub</a></span>
 					</div>
 					<div>
 						<span><em>denys.yarymovych@gmail.com</em></span>
