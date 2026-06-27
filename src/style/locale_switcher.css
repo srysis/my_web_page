@@ -6,19 +6,14 @@ div.locale_switcher {
 		appearance: base-select;
 	}
 
-	::picker(select) {
-		box-shadow: 0 4px 8px #777;
-	}
-
 	select#lang_switch {
         position: fixed;
         top: 0;
         right: 0;
 		z-index: 3;
-		display: block;
 		border: none;
 		border-radius: 5px;
-		padding: 5px .8vw;
+		padding: 5px 1.6vw;
 		color: #fff;
 		font-size: 2em;
 		background-color: #000;
@@ -26,14 +21,28 @@ div.locale_switcher {
 
 		option {
 			display: block;
-			border: 1px solid #000;
-			padding-block: 5px;
-			text-align: center;
+			border-left: 2px solid #666;
+			border-right: 2px solid #666;
+			padding: .5vh .5vw;
+			text-align: left;
+			background-color: #000;
 			color: #fff;
+		}
+
+		option:hover {
+			background-color: #222;
 		}
 
 		option::checkmark {
 			display: none;
+		}
+
+		option:first-child {
+			border-top: 2px solid #666;
+		}
+
+		option:last-child {
+			border-bottom: 2px solid #666;
 		}
 	}
 
@@ -53,5 +62,19 @@ div.locale_switcher {
 
 	::picker(select) {
 		border: none;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	div.locale_switcher {
+		select#lang_switch {
+			border: 2px solid #666;
+			padding: 5px 5vw;
+			font-size: 1.4em;
+			
+			option {
+				padding-inline: 3vw;
+			}
+		}
 	}
 }
