@@ -30,7 +30,8 @@ main {
 section#intro {
 	position: relative;
 	width: 60%;
-	height: 30vh;
+	min-height: 400px;
+	height: 45vh;
 	padding: 0 3vw;
 	background-color: rgba(0, 0, 0, 0.85);
 
